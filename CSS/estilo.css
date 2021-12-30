@@ -191,7 +191,8 @@ body {
 .btn-contato:hover {
     background-color: rgba(78, 78, 76, 0.521);
     color: #000000;
-    transition: .5s;
+    transition-duration: .5s;
+    transform: scale(1.1);
 }
 
 
@@ -219,7 +220,7 @@ body {
 }
 #rodape li:hover {
     background-color: #a85023;
-    transition: .5s;
+    transition-duration: .5s;
     color: whitesmoke;
     border-radius: 10px;
 
