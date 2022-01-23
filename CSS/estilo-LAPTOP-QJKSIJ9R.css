@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap'); /* font-family: 'Licorice', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Ubuntu:wght@300&display=swap'); /* font-family: 'Ubuntu', sans-serif;*/
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif
+}
+
+body {
+   background-color: #ede8ec;
+
+}
+
+/* Formatação Header e Menu */
+
+#cabeçalho li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+#menu li a:hover {
+    border-radius: 10px;
+    background-color: rgba(132, 133, 129, 0.733);
+    transition: .5s;
+}
+
+#logo {
+    font-family: 'Licorice', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+#cabeçalho {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c1002;
+
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+/* Formatação Banner */
+
+#btn-mobile {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    position: relative;
+}
+
+.img-wraper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.img-wraper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+.conteudo-texto {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    
+}
+
+.conteudo-texto h1 {
+    font-family: 'Licorice', cursive;
+    font-weight: 700;
+    font-size: 80px;
+    color: #2c1002;
+}
+
+.conteudo-texto p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #2c1002;
+}
+
+.btn-contato {
+    border-style: hidden;
+    margin: 20px;
+    padding: 15px;
+    background-color: #2c1002;
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor:pointer;
+
+}
+.btn-contato:hover {
+    background-color: rgba(78, 78, 76, 0.521);
+    color: #000000;
+    transition-duration: .5s;
+    transform: scale(1.1);
+}
+
+/* Formatação Produtos */
+
+.produtos h2 {
+    font-family: 'Licorice', cursive;
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    color: #2c1002;
+}
+.galeria {
+    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-auto-rows: 300px;
+    padding: 30px;
+    grid-gap: 20px;
+    
+
+}
+
+.item-galeria {
+    position: relative;
+    box-shadow: 4px 4px 10px #000; 
+    border-radius: 20px;
+    
+    
+}
+
+.item-galeria .img-galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   
+}
+
+
+.item-galeria .photos-description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2c1002;
+    color: #ede8ec;
+    font-family: 'Ubuntu', sans-serif ;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+
+.item-galeria:hover {
+    transform: scale(1.05);
+    transition: .5s;
+        
+}
+
+.icones-descricao {
+    width: 100%;
+    height: 100vh;
+    background-color:#2c1002;
+    color:#ede8ec;
+      
+}
+.icones-descricao h2 {
+    margin-bottom: 50px;
+    font-family: 'Licorice', cursive;
+    font-weight: 500;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+
+
+
+#rodape {
+    display: flex;
+    border-top: 0.4px solid #2c1002;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: 20px;
+}
+
+
+
+#rodape ul {
+    list-style: none;
+    
+}
+#rodape li {
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    color: #2c1002;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+#rodape li:hover {
+    background-color: #a85023;
+    transition-duration: .5s;
+    color: whitesmoke;
+    border-radius: 10px;
+
+}
+#rodape h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color:#2c1002;
+}
+
+/* Formatação Responsividade do site no geral */
+
+@media (max-width: 780px) {
+   
+    
+    #menu {
+        
+        display:block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color:#2c1002 ;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba( 0, 0, 0, .05);
+        
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor:pointer;
+        gap: .5rem;
+        color: whitesmoke;
+    }
+
+    #hamburger {
+        display: block;
+        color: whitesmoke;
+        border-top: 2px solid;
+        width: 20px;
+        
+    }
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+        
+    }
+    #nav.active #hamburger::before {
+        transform:rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform:rotate(-135deg);
+        top: -7px;
+    }
+   
+    .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 5%;
+        margin-right: 5%;
+        
+
+    }
+
+    .conteudo-texto p  {
+       display: flex;
+       align-items: center;
+       color: #2c1002;
+       text-align: center;
+       background-color: #ede8ec;
+       border-radius: 12px;
+       
+    }
+
+   .galeria {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+   }
+    
+}
+
+@media (max-width: 600px) {
+   
+    
+    #menu {
+        
+        display:block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color:#2c1002 ;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba( 0, 0, 0, .05);
+        
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor:pointer;
+        gap: .5rem;
+        color: whitesmoke;
+    }
+
+    #hamburger {
+        display: block;
+        color: whitesmoke;
+        border-top: 2px solid;
+        width: 20px;
+        
+    }
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+        
+    }
+    #nav.active #hamburger::before {
+        transform:rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform:rotate(-135deg);
+        top: -7px;
+    }
+   
+    .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 5%;
+        margin-right: 5%;
+        
+
+    }
+
+    .conteudo-texto p  {
+       display: flex;
+       align-items: center;
+       color: #2c1002;
+       text-align: center;
+       background-color: #ede8ec;
+       border-radius: 12px;
+       
+    }
+
+   .galeria {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+   }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
