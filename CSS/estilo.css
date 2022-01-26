@@ -203,9 +203,10 @@ body {
 
 .conjunto-grid {
     box-sizing: border-box;
+    width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     padding: 30px;
     grid-gap: 20px;
     align-items: center;
@@ -222,7 +223,7 @@ body {
 }
 
 .grid-icones-descricao h3 {
-    text-align: justify;
+    
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -384,7 +385,7 @@ body {
    }
 
    .icones-descricao {
-        width: 100%;
+        width: auto;
         height: auto;
         background-color:#b9a9a1;
         color:#2c1002;
@@ -515,6 +516,7 @@ body {
     }
 
     .conjunto-grid {
+        width: auto;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 1fr;
