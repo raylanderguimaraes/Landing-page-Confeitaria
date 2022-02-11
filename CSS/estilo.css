@@ -24,7 +24,8 @@ body {
 
 #menu li a:hover {
     border-radius: 10px;
-    background-color: rgba(132, 133, 129, 0.733);
+    /*background-color: rgba(132, 133, 129, 0.733);*/
+    color: #a85023;
     transition: .5s;
 }
 
