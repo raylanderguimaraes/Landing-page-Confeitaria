@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap'); /* font-family: 'Licorice', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Licorice&family=Ubuntu:wght@300&display=swap'); /* font-family: 'Ubuntu', sans-serif;*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, ul {
     margin: 0px;
     padding: 0px;
